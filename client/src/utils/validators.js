@@ -1,3 +1,4 @@
+import React from 'react'
 import { isValidUsername } from "6pp"
 export const usernameValidator = (username) => {
 

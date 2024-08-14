@@ -1,10 +1,11 @@
 import React from 'react'
-const Groups = () => {
+
+const NewGroup = () => {
   return (
     <div>
-      Groups
+      NewGroup
     </div>
   )
 }
 
-export default Groups
+export default NewGroup

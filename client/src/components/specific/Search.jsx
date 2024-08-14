@@ -1,10 +1,11 @@
 import React from 'react'
-const Groups = () => {
+
+const Search = () => {
   return (
     <div>
-      Groups
+      Search
     </div>
   )
 }
 
-export default Groups
+export default Search
