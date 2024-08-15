@@ -5,6 +5,7 @@ import {
   Box,
   IconButton,
   Tooltip,
+  Backdrop,
 } from "@mui/material";
 import React, { Suspense,lazy, useState } from "react";
 import { orange } from "../../constants/color";
@@ -114,7 +115,7 @@ const Header = () => {
       </Box>
       {
         isSearch && (
-          <Suspense fallback={<div>Loading Search...</div>}>
+          <Suspense fallback={<Backdrop open/>}>
 
           <SearchDialog/>
 
@@ -124,7 +125,7 @@ const Header = () => {
 
       {
         isNotification && (
-          <Suspense fallback={<div>Loading Notifications...</div>}>
+          <Suspense fallback={<Backdrop open/>}>
 
           <NotificationDialog/>
 
@@ -134,7 +135,7 @@ const Header = () => {
 
       {
         isNewGroup && (
-          <Suspense fallback={<div>Loading New Group...</div>}>
+          <Suspense fallback={<Backdrop open/>}>
 
           <NewGroupDialog/>
 
